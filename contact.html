@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — MACHEN | Speak Directly with Robert</title>
+  <meta
+    name="description"
+    content="Speak directly with Robert Machen. Three direct lines, Monday to Friday 9:00–17:00, or submit a case assessment enquiry."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body id="top">
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand brand-caps">MACHEN</a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="practice-areas.html" class="nav-link nav-caps">Practice</a>
+        <a href="about.html" class="nav-link nav-caps">About</a>
+        <a href="index.html#process" class="nav-link nav-caps">Process</a>
+        <a href="index.html#questions" class="nav-link nav-caps">Questions</a>
+        <a href="contact.html" class="nav-cta nav-caps" aria-current="page">
+          Contact <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact Page Intro -->
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html" class="back-link reveal">
+          <span aria-hidden="true">&larr;</span> Back to home
+        </a>
+
+        <p class="eyebrow reveal">06 — CONTACT</p>
+        <h1 class="page-title reveal">
+          Speak directly<br />
+          with Robert.
+        </h1>
+        <p class="page-lead reveal">
+          Three direct lines. No reception, no call centre — the phone is
+          answered during office hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Case Assessment Form -->
+    <section class="contact-page-content">
+      <div class="container contact-page-grid">
+        <aside class="contact-details-panel reveal" aria-label="Direct contact details">
+          <p class="eyebrow eyebrow-light">Direct contact</p>
+          <h2 class="contact-panel-title">Three direct lines.</h2>
+          <p class="contact-panel-lead">
+            No reception, no call centre — the phone is answered during office
+            hours.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <p class="contact-label">DIRECT LINE TWO</p>
+              <a href="tel:+17652399619" class="contact-value">
+                +1 765 239 9619
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <p class="contact-label">EMAIL</p>
+              <div class="contact-value-row">
+                <a href="mailto:MachenRob110316@gmail.com" class="contact-value">
+                  MachenRob110316@gmail.com
+                </a>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="MachenRob110316@gmail.com"
+                  aria-label="Copy email address"
+                  title="Copy email"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <p class="contact-label">OFFICE HOURS</p>
+              <p class="contact-value">Monday – Friday &middot; 9:00 – 17:00</p>
+            </div>
+          </div>
+        </aside>
+
+        <div class="contact-form-panel reveal">
+          <h2 class="contact-form-title">Case assessment</h2>
+          <p class="contact-form-subtitle">
+            A short description is enough to start.
+          </p>
+
+          <form id="inquiry-form" class="inquiry-form js-assessment-form" novalidate>
+            <div class="form-field">
+              <label for="name">FULL NAME</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" />
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-field">
+                <label for="phone">PHONE</label>
+                <input id="phone" name="phone" type="tel" placeholder="Optional" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="matter-type">TYPE OF MATTER</label>
+              <select id="matter-type" name="matterType">
+                <option value="Residential conveyancing" selected>Residential conveyancing</option>
+                <option value="Commercial property">Commercial property</option>
+                <option value="Leases & tenancies">Leases &amp; tenancies</option>
+                <option value="Property disputes">Property disputes</option>
+                <option value="Zoning & land use">Zoning &amp; land use</option>
+                <option value="Title & boundaries">Title &amp; boundaries</option>
+                <option value="Corporate law">Corporate law</option>
+                <option value="Family law">Family law</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">THE MATTER</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="What has happened, and what stage are you at?"
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                SEND ENQUIRY <span class="arrow" aria-hidden="true">&rarr;</span>
+              </button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </div>
+
+            <p class="form-disclaimer">
+              PLEASE DO NOT SEND CONFIDENTIAL DOCUMENTS UNTIL TERMS ARE AGREED.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-contact-strip">
+        <div>
+          <p class="eyebrow">CALL ROBERT MACHEN</p>
+          <a href="tel:+17652399619" class="footer-contact-value">+1 765 239 9619</a>
+        </div>
+        <div>
+          <p class="eyebrow">EMAIL</p>
+          <a href="mailto:MachenRob110316@gmail.com" class="footer-contact-value">MachenRob110316@gmail.com</a>
+        </div>
+        <div>
+          <p class="eyebrow">HOURS</p>
+          <p class="footer-contact-value">Monday – Friday &middot; 9:00 – 17:00</p>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <a href="index.html" class="brand brand-footer brand-caps">MACHEN <span class="footer-pipe">|</span> PROPERTY LAW</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="practice-areas.html">PRACTICE</a>
+          <a href="about.html">ABOUT</a>
+          <a href="index.html#process">PROCESS</a>
+          <a href="index.html#questions">QUESTIONS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="disclaimer">
+          THE INFORMATION ON THIS SITE IS GENERAL IN NATURE AND IS NOT LEGAL
+          ADVICE. NO LAWYER–CLIENT RELATIONSHIP IS CREATED UNTIL TERMS ARE
+          AGREED IN WRITING.
+        </p>
+        <p class="copyright">&copy; <span id="year">2026</span> ROBERT MACHEN</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

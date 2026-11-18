@@ -1,0 +1,613 @@
+/* ==========================================================================
+   Page Sections (Home, About Page, Practice Page & Contact Page)
+   ========================================================================== */
+
+/* Hero Section */
+.hero {
+  padding-top: clamp(3.5rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero .eyebrow {
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 6.4vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  max-width: 16ch;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title-wide {
+  max-width: 18ch;
+}
+
+.hero-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-lead {
+  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 58ch;
+  margin-bottom: 2.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+  margin-bottom: clamp(2.75rem, 5vw, 4rem);
+}
+
+.hero-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem 2.5rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 2rem;
+}
+
+.hero-meta-item {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hero-meta-value {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+}
+
+/* Banner Image Overlay */
+.hero-banner {
+  margin: 0;
+}
+
+.hero-banner-visual {
+  position: relative;
+  min-height: clamp(220px, 30vw, 340px);
+  background:
+    radial-gradient(circle at 82% 24%, rgba(244, 243, 238, 0.1) 0%, transparent 48%),
+    linear-gradient(135deg, #172b25 0%, #1f3730 55%, #28463d 100%);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.hero-banner-grid-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(244, 243, 238, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 243, 238, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+}
+
+.hero-banner-overlays {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+}
+
+.banner-tag {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-on-dark);
+  background-color: rgba(23, 43, 37, 0.72);
+  border: 1px solid var(--border-dark);
+  border-radius: 2px;
+}
+
+.banner-caption,
+.section-caption {
+  margin-top: 0.9rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Shared Section Header */
+.section-header-split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem 3rem;
+  margin-bottom: clamp(2.25rem, 4vw, 3rem);
+}
+
+.section-header-split .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.section-lead {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 44ch;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+/* Practice Areas Section */
+.practice-areas {
+  padding-block: clamp(4rem, 7vw, 5.75rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem 2.5rem;
+}
+
+.practice-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2.25rem 2rem;
+}
+
+.practice-card {
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.practice-num {
+  display: block;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.practice-title {
+  font-family: var(--font-serif);
+  font-size: 1.3125rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.practice-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.section-caption {
+  margin-top: 2.5rem;
+}
+
+/* About Section */
+.about {
+  padding-block: clamp(4rem, 7vw, 5.75rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 2.5rem 4rem;
+  align-items: start;
+}
+
+.about-left .eyebrow {
+  margin-bottom: 1.15rem;
+}
+
+.about-quote {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.375rem, 2.2vw, 1.75rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.about-body {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 58ch;
+}
+
+.about-body-spaced {
+  margin-top: 1.15rem;
+}
+
+.about-pillars {
+  margin: 2.25rem 0 0;
+  padding: 1.5rem 0 0;
+  list-style: none;
+  border-top: 1px solid var(--border-light);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.about-pillars li {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+/* Process Section */
+.process {
+  padding-block: clamp(4rem, 7vw, 5.75rem);
+}
+
+.process-hours {
+  color: var(--text-secondary);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2.25rem 2rem;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+  padding-block: clamp(3.5rem, 6.5vw, 5rem);
+}
+
+.cta-banner .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.cta-banner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem 3rem;
+}
+
+.cta-banner-lead {
+  margin-bottom: 0;
+}
+
+/* Questions / FAQ Section */
+.questions {
+  padding-block: clamp(4rem, 7vw, 5.75rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 2.5rem 4rem;
+  align-items: start;
+}
+
+.questions-left .eyebrow {
+  margin-bottom: 1.15rem;
+}
+
+.questions-lead {
+  margin-top: 1rem;
+}
+
+.faq-list {
+  border-top: 1px solid var(--border-light);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 1.35rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding-bottom: 1.35rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 62ch;
+}
+
+/* Contact Section (Home) */
+.contact {
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+  padding-block: clamp(4rem, 8vw, 6.25rem);
+}
+
+.contact .eyebrow {
+  margin-bottom: 1.15rem;
+}
+
+.contact-split {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 2.5rem 4rem;
+  align-items: start;
+}
+
+.contact-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.125rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.contact-lead {
+  font-size: 0.9375rem;
+  color: var(--text-on-dark-muted);
+  max-width: 48ch;
+  margin-bottom: 2.5rem;
+}
+
+.contact-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-on-dark-subtle);
+  margin-bottom: 0.5rem;
+}
+
+.contact-value-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.contact-value {
+  display: inline-block;
+  font-size: 1.0625rem;
+  color: var(--text-on-dark);
+  transition: opacity var(--transition);
+}
+
+a.contact-value:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.case-form-card {
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  border-radius: 2px;
+}
+
+.case-form-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 0.45rem;
+}
+
+.case-form-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Shared Subpage Hero */
+.page-hero,
+.contact-page-hero {
+  padding-top: clamp(3rem, 6vw, 4.75rem);
+  padding-bottom: clamp(2.5rem, 5vw, 3.75rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  transition: color var(--transition);
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+.page-hero .eyebrow,
+.contact-page-hero .eyebrow {
+  margin-bottom: 1.25rem;
+}
+
+.page-title,
+.contact-page-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5.4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  max-width: 16ch;
+  margin-bottom: 1.35rem;
+}
+
+.page-lead,
+.contact-page-lead {
+  font-size: clamp(1rem, 1.35vw, 1.0625rem);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 56ch;
+}
+
+/* Contact Page */
+.contact-page-content {
+  padding-block: clamp(3rem, 6vw, 4.75rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 2.5rem 3.5rem;
+  align-items: start;
+}
+
+.contact-details-panel {
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+  padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  border-radius: 2px;
+}
+
+.contact-details-panel .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.contact-panel-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.85rem;
+}
+
+.contact-panel-lead {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-on-dark-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-details-list {
+  display: grid;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-dark);
+}
+
+.contact-form-panel {
+  padding-top: 0.25rem;
+}
+
+.contact-form-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+/* About Page */
+.about-page-content {
+  padding-block: clamp(3rem, 6vw, 4.75rem);
+}
+
+/* Practice Areas Page */
+.practice-page-content {
+  padding-block: clamp(1rem, 2.5vw, 2rem) clamp(3.5rem, 6.5vw, 5.25rem);
+}
+
+.practice-detail-list {
+  display: grid;
+}
+
+.practice-detail-row {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 1.25rem 4rem;
+  align-items: start;
+  padding-block: clamp(2rem, 4vw, 2.75rem);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.practice-detail-row:last-child {
+  border-bottom: none;
+}
+
+.practice-detail-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+.practice-detail-lead {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1875rem, 1.7vw, 1.4375rem);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}

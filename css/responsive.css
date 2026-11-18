@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .practice-grid-4,
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .about-grid,
+  .questions-grid,
+  .contact-split,
+  .contact-page-grid,
+  .practice-detail-row {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .hero-meta-grid,
+  .about-pillars,
+  .footer-contact-strip,
+  .practice-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem var(--container-pad) 1.5rem;
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-light);
+    display: none;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-line:first-child {
+    transform: translateY(3.75px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-line:last-child {
+    transform: translateY(-3.75px) rotate(-45deg);
+  }
+
+  .practice-grid-4,
+  .process-grid,
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
