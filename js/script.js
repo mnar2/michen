@@ -142,11 +142,11 @@
       const name = String(data.get("name") || "").trim();
       const email = String(data.get("email") || "").trim();
       const phone = String(data.get("phone") || "").trim();
-      const matter = String(data.get("matterType") || data.get("area") || "General enquiry").trim();
+      const matter = String(data.get("matterType") || data.get("area") || "General inquiry").trim();
       const message = String(data.get("message") || "").trim();
       const statusEl = form.querySelector(".form-status");
 
-      const subject = `Case Assessment Enquiry — ${matter} (${name})`;
+      const subject = `Case Assessment Inquiry — ${matter} (${name})`;
       const body = [
         `Full Name: ${name}`,
         `Email: ${email}`,
@@ -175,7 +175,7 @@
           `Opening Gmail to send to ${RECIPIENT_EMAIL}… ` +
           `<a href="${mailtoUrl}" class="status-mail-link">Use default email app instead</a>`;
       }
-      showToast("Opening Gmail with your enquiry details…");
+      showToast("Opening Gmail with your inquiry details…");
 
       if (inquiryModal && inquiryModal.contains(form)) {
         window.setTimeout(closeModal, 1400);
