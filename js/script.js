@@ -141,7 +141,6 @@
       const data = new FormData(form);
       const name = String(data.get("name") || "").trim();
       const email = String(data.get("email") || "").trim();
-      const phone = String(data.get("phone") || "").trim();
       const matter = String(data.get("matterType") || data.get("area") || "General inquiry").trim();
       const message = String(data.get("message") || "").trim();
       const statusEl = form.querySelector(".form-status");
@@ -150,7 +149,6 @@
       const body = [
         `Full Name: ${name}`,
         `Email: ${email}`,
-        `Phone: ${phone || "Not provided"}`,
         `Type of Matter: ${matter}`,
         "",
         "The Matter:",
